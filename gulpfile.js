@@ -26,7 +26,7 @@ gulp.task('images', function () {
 });
  
 
-gulp.task('serve', ['browserSync','sass','images'], function() {
+gulp.task('start', ['browserSync','sass','images'], function() {
   //2. serve at custom port
   var server = gls.static('./', 3030);
   // var server = gls('./', true, 3030);
