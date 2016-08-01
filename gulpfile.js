@@ -24,9 +24,19 @@ gulp.task('images', function () {
   return gulp.src('./src/images/**')
     .pipe(gulp.dest('./dist/images'));
 });
+
+gulp.task('jsFiles', function () {
+  return gulp.src('./src/js/**')
+    .pipe(gulp.dest('./dist/js'));
+});
+
+gulp.task('fontFiles', function () {
+  return gulp.src('./src/fonts/**')
+    .pipe(gulp.dest('./dist/fonts'));
+});
  
 
-gulp.task('start', ['browserSync','sass','images'], function() {
+gulp.task('start', ['browserSync','sass','images', 'jsFiles', 'fontFiles'], function() {
   //2. serve at custom port
   var server = gls.static('./', 3030);
   // var server = gls('./', true, 3030);

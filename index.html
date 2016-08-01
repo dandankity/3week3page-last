@@ -6,34 +6,85 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>3 week 3 page</title>
+        <title>Fashion Week</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="dist/main.css">
+        <script src="https://use.fontawesome.com/ed4c9dca7b.js"></script>
+        <script src="dist/js/jquery-2.2.0.min.js"></script>
+        <script src="dist/js/jquery.stellar.min.js"></script>
+        <script src="dist/js/slick.min.js"></script>
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" type="image/x-icon" href="dist/images/letter-f.ico"/>
     </head>
     <body>
-        <header>
-            <a class="logo" href="#"><img src="dist/images/logo.png"></a>
-            <nav class="guide">
-                <ul>
-                    <li>Home</li>
-                    <li>Apply As Tutor</li>
-                    <li>How It Works</li>
-                    <li>Why Education</li>
-                    <li>About Us</li>
-                    <li>Sign In</li>
-                </ul>
-            </nav>
-            <div class="operations">
-                <input type="button" name="donate" value="Donate">
-            </div>         
-        </header>
+        <main id="main">
+            <section class="pano">
+                <h1 class="title">China Fashion Week: The Shows<br>August 2016</h1>
+                <span class="date">8.08 - 8.14</span>
+            </section>
+            <section class="mobile-app-avail">
+                <h2 class="title">CFW Mobile App Available Now!</h2>
+                <img src="dist/images/mobile.jpg" alt="" class="mobile">
+                <form action="" class="sign-up-form">
+                    <label class="label" for="label">Sign up for early access to all things #CFW</label>
+                    <input type="text" class="email" name="email" placeholder="email address">    
+                    <button class="submit">Submit</button>
+                </form>
+            </section>
+            <section class="parallax" data-stellar-background-ratio="0.7">
+                <div class="container"><a class="official-blog" href="#">The Official #CFW Blog</a></div>
+            </section>
+            <section class="runway">
+                <h2 class="runway-title">RUNWAY</h2>
+                <div class="runway-item"><a href="#"><img src="dist/images/clothes-1.jpg" alt=""></a></div>
+                <div class="runway-item"><a href="#"><img src="dist/images/clothes-2.jpg" alt=""></a></div>
+                <div class="runway-item"><a href="#"><img src="dist/images/clothes-3.jpg" alt=""></a></div>
+                <div class="runway-item"><a href="#"><img src="dist/images/clothes-4.jpg" alt=""></a></div>
+                <div class="runway-item"><a href="#"><img src="dist/images/clothes-5.jpg" alt=""></a></div>
+                <div class="runway-item"><a href="#"><img src="dist/images/clothes-6.jpg" alt=""></a></div>
+            </section>
 
-        <footer>
-            &copy Learn To Be 2014
+            <section class="sponsors">
+                <h2 class="sponsors-title">SPONSORS</h2>
+                <div class="sponsor-items">
+                    <div class="sponsor-item"><a href="#"><img src="dist/images/sponsor1.jpg" alt=""></a></div>
+                    <div class="sponsor-item"><a href="#"><img src="dist/images/sponsor2.jpg" alt=""></a></div>
+                    <div class="sponsor-item"><a href="#"><img src="dist/images/sponsor3.png" alt=""></a></div>
+                    <div class="sponsor-item"><a href="#"><img src="dist/images/sponsor4.jpg" alt=""></a></div>
+                    <div class="sponsor-item"><a href="#"><img src="dist/images/sponsor5.png" alt=""></a></div>
+                    <div class="sponsor-item"><a href="#"><img src="dist/images/sponsor6.png" alt=""></a></div>
+                    <div class="sponsor-item"><a href="#"><img src="dist/images/sponsor7.jpg" alt=""></a></div>
+                    <div class="sponsor-item"><a href="#"><img src="dist/images/sponsor8.png" alt=""></a></div>        
+                </div>    
+            </section>
+            <aside class="sidebar">
+                <ul class="social">
+                    <li class="social-item social-item-facebook"><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                    <li class="social-item social-item-google"><a href="#"><i class="fa fa-google fa-lg"></i></a></li>
+                    <li class="social-item social-item-twitter"><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li class="social-item social-item-plus"><a href="#"><i class="fa fa-plus fa-lg"></i></a></li>
+                </ul>
+            </aside>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-top"><div class="footer-icon">CFW</div></div>
+            <div class="footer-bottom"> &copy China Fashion Week 2016. Designed & Developed by Dan Chen</div>   
         </footer> 
     </body>
+    <script type="text/javascript">
+       $(document).ready(function(){
+           $('.sponsor-items').slick({
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 1000,
+              infinite: true,
+              swipe: true,
+           });
+       }); 
+    </script>
+
 </html>
