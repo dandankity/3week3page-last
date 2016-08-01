@@ -3,6 +3,10 @@
 @import "slick-theme.scss";
 
 $break-small: 768px;
+$white: #fff;
+$black: #000;
+$light-red: #F14358; 
+$h2-font-size: 24px;
 
 body {
 	margin: 0;
@@ -17,13 +21,13 @@ body {
 	    h1.title {
     	    font-size: 42px;
 			font-weight: bold;
-			color: #fff;
+			color: $white;
     		padding: 40px 0 10px 40px;
 	    }
 	    span.date {
     	    font-size: 28px;
-		    border: 1px solid #fff;
-		    background-color: #fff;
+		    border: 1px solid $white;
+		    background-color: $white;
 		    margin-left: 40px;
 		    padding: 0 5px;
 	    }
@@ -50,22 +54,22 @@ body {
 			    margin: 15px auto;
 			    padding: 8px 0;
 			    text-indent: 5px;
-		        border: 1px solid #000;
+		        border: 1px solid $black;
     		}
     		.submit {
 			    display: block;
 			    margin: 0 auto;
 			    padding: 8px 30px;
-			    color: #fff;
-			    background: #000;
-			    border-color: #000;
+			    color: $white;
+			    background: $black;
+			    border-color: $black;
 			    font-weight: 400;
 			    font-size: 16px;
 			    font-family: Times;
 			    &:hover {
 					-webkit-transform: translateX(-5px) translateY(-5px);
 					transform: translateX(-5px) translateY(-5px);
-					box-shadow: 5px 5px 0 0 #F14358;
+					box-shadow: 5px 5px 0 0 $light-red;
 				}
     		}
     	}
@@ -80,10 +84,10 @@ body {
 		    top: 200px;
 		    text-align: center;
 		    .official-blog {
-	    	    border: 1px solid #000;
-				background-color: #000;
+	    	    border: 1px solid $black;
+				background-color: $black;
 				font-size: 24px;
-				color: #fff;
+				color: $white;
 				padding: 15px 40px;
 				text-decoration: none;
 				width: 250px;
@@ -92,7 +96,7 @@ body {
 				&:hover {
 					-webkit-transform: translateX(-5px) translateY(-5px);
 					transform: translateX(-5px) translateY(-5px);
-					box-shadow: 5px 5px 0 0 #F14358;
+					box-shadow: 5px 5px 0 0 $light-red;
 				}
 		    }
    		}
@@ -106,7 +110,7 @@ body {
 			.social-item {
 				width: 20px;
 				padding: 15px;
-				a { color: #fff; }
+				a { color: $white; }
 				text-align: center;	
 				&:hover {
 					width: 40px;
@@ -183,8 +187,8 @@ footer.footer {
     	.footer-icon {
     		display: inline-block;
     		font-size: 24px;
-    		color: #F14358;
-    		background-color: #000;
+    		color: $light-red;
+    		background-color: $black;
 		    width: 60px;
 		    height: 60px;
 		    border-radius: 60px;
@@ -204,7 +208,7 @@ footer.footer {
 	    	    position: absolute;
     			top: 25px;
 		    	width: 700px;
-		    	border-bottom: 1px solid #000;
+		    	border-bottom: 1px solid $black;
 		    }
     	}
     } 
