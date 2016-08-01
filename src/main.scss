@@ -31,12 +31,21 @@ body {
 		    margin-left: 40px;
 		    padding: 0 5px;
 	    }
+	    @media screen and (max-width: $break-small) {
+	    	height:250px;
+	    	.title {
+	    		font-size: 18px;
+	    	}
+	    	span.date {
+	    		font-size: 16px;
+	    	}
+	    }
 	}
 	.mobile-app-avail {
     	text-align: center;
     	padding: 50px;
     	h2.title {
-    		font-size: 24px;
+    		font-size: $h2-font-size;
     		font-weight: normal;
     	}
     	img.mobile {
@@ -86,7 +95,7 @@ body {
 		    .official-blog {
 	    	    border: 1px solid $black;
 				background-color: $black;
-				font-size: 24px;
+				font-size: $h2-font-size;
 				color: $white;
 				padding: 15px 40px;
 				text-decoration: none;
@@ -99,6 +108,18 @@ body {
 					box-shadow: 5px 5px 0 0 $light-red;
 				}
 		    }
+   		}
+   		@media screen and (max-width: $break-small) {
+   			background-attachment: initial;
+   			height: 300px;
+   			.container {
+   				top: 130px;
+   				.officail-blog {
+   					font-size: 16px;
+   					padding: 15px 15px;
+   				}
+
+   			}
    		}
    	}
 
@@ -134,7 +155,7 @@ body {
 	.runway {
 		.runway-title {
 	    	text-align: center;
-			font-size: 24px;
+			font-size: $h2-font-size;
 			margin: 80px 0 30px 0;
 		}
 		.runway-item {
@@ -148,6 +169,9 @@ body {
 					transform: scale(1.25);	
 				}
 			}
+			@media screen and (max-width: $break-small) {
+				width: 33.3%;
+			}
 		}
 	}
 	.sponsors {
@@ -156,7 +180,7 @@ body {
 		clear: both;
 		.sponsors-title {
 			text-align: center;
-			font-size: 24px;
+			font-size: $h2-font-size;
 			margin: 80px 0 30px 0;
 		}
 		.sponsor-items {
@@ -186,7 +210,7 @@ footer.footer {
     	text-align: center;
     	.footer-icon {
     		display: inline-block;
-    		font-size: 24px;
+    		font-size: $h2-font-size;
     		color: $light-red;
     		background-color: $black;
 		    width: 60px;
