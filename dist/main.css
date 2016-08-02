@@ -329,6 +329,9 @@ body {
     background-color: #858585; }
   #main .sidebar .social .social-item-plus {
     background-color: #646464; }
+  @media screen and (max-width: 768px) {
+    #main .sidebar {
+      display: none; } }
 
 #main .runway .runway-title {
   text-align: center;
@@ -367,11 +370,13 @@ body {
     #main .sponsors .sponsor-items .slick-prev:before,
     #main .sponsors .sponsor-items .slick-next:before {
       color: black; }
+  @media screen and (max-width: 768px) {
+    #main .sponsors .sponsor-items {
+      width: 80%; } }
 
 footer.footer {
   position: relative;
-  top: 140px;
-  /*padding: 20px;*/ }
+  top: 140px; }
   footer.footer .footer-top {
     width: 100%;
     text-align: center; }

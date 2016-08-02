@@ -169,6 +169,9 @@ body {
 				background-color: #646464;
 			}
 		}
+		@media screen and (max-width: $break-small) {
+			display: none;
+		}
 	}	
 
 	.runway {
@@ -221,14 +224,15 @@ body {
         		color: black;
     		}
 		}
+		@media screen and (max-width: $break-small) {
+			.sponsor-items { width: 80%; }
+		}
 	}
 }
 
 footer.footer {
 	position: relative;
-	top: 140px;
-	/*padding: 20px;*/
-	
+	top: 140px;	
     .footer-top {
     	width: 100%;
     	text-align: center;
