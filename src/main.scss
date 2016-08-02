@@ -187,6 +187,7 @@ body {
 			img {
 				width: 100%;
 				transition: 0.3s ease-in-out;
+				display: block;
 				&:hover {
 					transform: scale(1.25);	
 				}
@@ -198,6 +199,10 @@ body {
 						transform: none;
 					}
 				}
+			}
+			&:after {
+				clear: both;
+				content: "";
 			}
 		}
 	}
